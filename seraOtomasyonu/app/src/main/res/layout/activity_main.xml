@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    //toprak nem ve hava sıcaklık kısmı
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        //toprak nem kısmı
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#8F6F40"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tnemot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="toprak nem oranı"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tnemd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sulama Durumu"
+                    android:textColor="#7CEECE"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/tnemb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:background="#8C7E51"
+                    android:text="SULAMA"
+                    android:textColor="#7CEECE" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        //hava sıcaklık kısmı
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#D33257"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hsıcot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hava Sıcaklıgı"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/hsıcd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sıcaklık durumu"
+                    android:textColor="#7CEECE"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/hsıcb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:background="#8C7E51"
+                    android:text="ISINMA"
+                    android:textColor="#7CEECE" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    //hava nem oran kısmı ve ekstra
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        //hava nem kısmı
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#8659"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hnemot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hava Nem Oranı % " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/hnemd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="hava nem acıklama"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/hnemb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="havalandırma" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        //ekstra
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#EB9532"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/saniye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="saniye"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/acıklama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Sera Otomasyon Sistemi bir çok ailenin bireylerin doğal besin tüketme çabasını kendi evine balkonuna sera sistemimiz ile çözum olmak doğal besinleri kendi yetiştirmek için ortam hazırlmaak" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    //acıklama kısmı
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#CF000F"
+        android:gravity="center"
+
+        >
+
+        <TextView
+            android:id="@+id/eror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uyarı kısmı ERROR!"
+            android:textColor="#E7E7E7"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>
